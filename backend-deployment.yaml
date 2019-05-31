@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: backend-deployment
+  name: backend
   labels:
     app: backend
 spec: 
@@ -18,4 +18,7 @@ spec:
        - name: backend
          image: vsacre/backend
          ports:
-         - containerPort: 80
+         - containerPort: 8081
+         env:
+         - name: MYSQL_IP
+           value: mysql

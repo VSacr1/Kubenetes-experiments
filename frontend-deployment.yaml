@@ -18,5 +18,5 @@ spec:
       - name: frontend
         image: vsacre/node
         ports:
-        - containerPort: 3000
+        - containerPort: 3000 
     
