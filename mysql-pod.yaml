@@ -13,8 +13,9 @@ spec:
       name: mysql 
     env:
     - name: mysql 
+      value: "localhost:3306"
     - name: MYSQL_DATABASE
-      value: independentproject
+      value: "independentproject"
     - name: MYSQL_ROOT_PASSWORD
-      value:  password
+      value: "password"
 
